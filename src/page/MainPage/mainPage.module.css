@@ -1,4 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    color: #EBEDEF;
+}
+
+.PapaName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262729;
+}
+
+.name{
+    font-size: 3vh;
+    background-color: #262729;
 }
