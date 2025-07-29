@@ -1,0 +1,74 @@
+.Papaheader {
+    background-color: #292B2F;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 5vh;
+    user-select: none;
+}
+
+.PapaName {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292B2F;
+}
+
+.name {
+    font-size: 3vh;
+    background-color: #292B2F;
+    font-family: "Poppins Black", sans-serif;
+    color: #DCDDDE;
+}
+
+.hello {
+    font-size: 3vh;
+    color: #DCDDDE;
+    font-family: "Poppins SemiBold", sans-serif;
+    background-color: #292B2F;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+}
+
+.settingicon {
+    width: 2vh;
+    background-color: #292B2F;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 4vh;
+    right: 2vh;
+    box-shadow: 0 0.2vh 0.5vh rgba(0,0,0,0.1);
+    border-radius: 1vh;
+    padding: 1vh;
+    z-index: 1000;
+    font-family: "Poppins Medium", sans-serif;
+    font-size: 2vh;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 1vh 2vh;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #f0f0f0;
+    color: #292B2F;
+    border-radius: 1vh;
+}

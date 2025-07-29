@@ -1,20 +1,15 @@
 import React from "react"
-import style from "./mainPage.module.css"
-import pirat from "./img/pirat.jpg"
+import s from "./mainPage.module.css"
+import pirat from './img/pirat.jpg'
 import { Link } from "react-router-dom"
 
 
 export const MainPage = () =>{
     return(
     <div>
-        <div className={style.PapaName}>
-            <div className={style.name}>VoI</div>
-        </div>
-        <div className={style.PapaCard}>
-            <div className={style.card}>
-                <Link>
-                <img src={pirat} alt="klasnaya kartinka" />
-                </Link>
+        <div className={s.PapaCard}>
+            <div className={s.card}>
+                <img className={s.pirat} src={pirat} alt="klasnaya kartinka" />   
             </div>
         </div>
         
