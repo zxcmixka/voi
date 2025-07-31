@@ -50,25 +50,39 @@
     right: 2vh;
     box-shadow: 0 0.2vh 0.5vh rgba(0,0,0,0.1);
     border-radius: 1vh;
-    padding: 1vh;
+    padding: 2vh;
     z-index: 1000;
     font-family: "Poppins Medium", sans-serif;
     font-size: 2vh;
 }
 
 .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 0;
+  margin: 0;
 }
 
-.menu li {
+.link{
     padding: 1vh 2vh;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.menu li:hover {
+.link:hover{
     background-color: #f0f0f0;
     color: #292B2F;
     border-radius: 1vh;
+}
+
+.logo{
+    width: 5vh;
+    background-color: #292B2F;
+}
+
+.linkmain{
+    background-color: #292B2F;
+    text-decoration: none;
 }

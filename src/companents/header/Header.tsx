@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import s from './header.module.css'
 import setting from './img/setting.png'
+import { Link } from 'react-router-dom';
+import logo from "./img/logo.png"
 
 
 const user = "paha"; // под бек
@@ -16,7 +18,8 @@ export const Header = () => {
             <div className={s.hello}>hello, {user}!</div>
 
             <div className={s.PapaName}>
-                <div className={s.name}>VoI</div>
+                <div className={s.name}><Link to="/" className={s.linkmain}>VoI</Link></div>
+                <img src={logo} className={s.logo} />
             </div>
 
             <div className={s.setting} onClick={toggleMenu}>
@@ -25,9 +28,9 @@ export const Header = () => {
 
             {isOpen && (
                 <div className={s.menu}>
-                    <ul>
-                        <li>Profile Settings</li>
-                        <li>Quit</li>
+                    <ul> 
+                        <Link to="/login" className={s.link}>Sing In</Link>
+                        <Link to="/about" className={s.link}>About</Link>
                     </ul>
                 </div>
             )}
