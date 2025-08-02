@@ -5,6 +5,17 @@ import pass from "./img/pass.png"
 
 
 export const RegisterPage = () => {
+    const registerUser = async (username: string, password: string) => {
+  const res = await fetch('http://localhost:3001/api/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username, password })
+  });
+
+  const data = await res.json();
+  console.log(data);
+};
+
 
     return(
         <div className={s.okno}>
